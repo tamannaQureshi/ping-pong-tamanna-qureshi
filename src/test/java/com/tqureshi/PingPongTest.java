@@ -19,7 +19,7 @@ public class PingPongTest {
     private TestRestTemplate restTemplate;
 
     @Test
-    public void greetingShouldReturnDefaultMessage() throws Exception {
+    public void shouldReturnPong() {
         assertThat(this.restTemplate.getForObject("http://localhost:" + port + "/ping",
                 String.class)).contains("pong");
     }
